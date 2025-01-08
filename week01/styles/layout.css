@@ -30,6 +30,7 @@
   .container > div.main {
     grid-area: main;
     background-color: #c7c5c5;
+    color: inherit;
     padding: 10px;
   }
 
