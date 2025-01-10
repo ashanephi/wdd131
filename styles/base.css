@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(150px, 2fr) minmax(70px, 1fr); 
+    grid-template-rows: 0.7fr 2fr 0.5fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    gap: 40px;
+    width: 1240px;
+    height: 400px;
+    margin: 0 auto;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(52, 52, 110);
+    color: white;
+    display: grid;
+    text-align: center;
+}
+
+span, #lastModified {
+    color: yellow;
+    font-size: medium;
+}
+
+h1 {
+    padding: 5px;
+    margin: auto;
+}
+
+nav ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #222121;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid rgb(52, 52, 110);
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+
+.card h2 {
+    background-color: rgb(52, 52, 110);
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.content .img1 {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.content .img2 {
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(52, 52, 110);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contents, .resources{
+    padding: 30px;
+}
+
+.resources li a {
+    text-decoration: none;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 0.3fr 0.1fr 0.3fr;
+    padding: 20px;
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr ;
+
+}
+
+.content2{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr ;
+}
+
+.card_location {
+    text-align: center;
+    display: grid;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.card_img_profile {
+    grid-column: 2;
+    grid-row: 1;
+}
+
