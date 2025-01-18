@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Nephi Asha">
+    <meta name="author" content="Nephi Asha">
+    <meta name="keywords" content="WDD 131, web development, JavaScript, CSS, HTML">
+    <title>Temple Album</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav>
+            <button id="menu">&#9776;</button>
+            <ul id="nav-list" class="hidden">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples in the Album</h2>
+        <div class="temple-gallery">
+            <figure>
+                <img src="images/1-Boise-Idaho-Temple-1968984.jpg" alt="Boise Idaho Temple">
+                <figcaption>Boise Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/1-Boise-Idaho-Temple-1968984.jpg" alt="Boise Idaho Temple">
+                <figcaption>Boise Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/anchorage-temple-lds-253274-wallpaper.jpg" alt="Anchorage Temple">
+                <figcaption>Anchorage Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/belem_brazil_temple_exterior.jpg" alt="Belem Brazil Temple">
+                <figcaption>Belem Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aba-nigeria-temple-lds-273999-wallpaper.jpg" alt="Aba Nigeria Temple">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/04-Billings-Montana-Temple-2220575.jpg" alt="Billings Montana Temple">
+                <figcaption>Billings Montana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/atlanta-georgia-mormon-temple-900182-wallpaper.jpg" alt="Atlanta Georgia Temple">
+                <figcaption>Atlanta Georgia Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Nephi Asha | Cross River State, Nigeria</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
