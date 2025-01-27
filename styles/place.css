@@ -28,6 +28,10 @@ header {
   border-bottom: 30px solid var(--secondary-color);
 }
 
+.try::after
+{
+  content: " km";
+}
 
 main {
   display: flex;
