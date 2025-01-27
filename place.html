@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nephi Asha">
+    <meta name="keywords" content="WDD 131, web development, JavaScript, CSS, HTML">
+    <title>WDD 131 - Madagascar - Nephi Asha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+        <main>
+            <picture>
+                <source srcset="images/lemur-group-larger.webp" media="(min-width: 768px)">
+                <img src="images/lemur-profile.webp" alt="Lemurs in Madagascar">
+            </picture>
+            <div class="information">
+                <div class="info-box">
+                    <h2>Data</h2>
+                    <div class="details">
+                        <p><strong>Area:</strong> 587,041 sq km</p>
+                        <p><strong>Population:</strong> 27,691,018</p>
+                        <p><strong>Capital:</strong> Antananarivo</p>
+                        <p><strong>Languages:</strong> Malagasy, French</p>
+                        <p><strong>Currency:</strong> Malagasy Ariary</p>
+                        <p><strong>Time Zone:</strong> UTC+3</p>
+                        <p><strong>Calling Code:</strong> +261</p>
+                        <p><strong>Internet TLD:</strong> .mg</p>
+                    </div>
+                </div>
+            
+                <div class="weather-box">
+                    <h2>Weather</h2><span><img src="images/weather-icon.svg" alt="weather icon" width="100"></span><br>
+                    <div class="details">
+                        <p><strong>Temperature:</strong> 10°C</p>
+                        <p><strong>Conditions:</strong> Partly Cloudy</p>
+                        <p><strong>Wind:</strong> 5 km/h</p>
+                        <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Nephi Asha &copy; Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
