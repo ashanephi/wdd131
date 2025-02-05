@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-list {
+        display: flex;
+        justify-content: center;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        font-size: small;
+    }
+
+    #nav-list li {
+        margin: 0 15px;
+    }
+
+    #nav-list li a{
+        border: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #nav-list.hidden {
+        display: flex;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    figure {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    figure:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}

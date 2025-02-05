@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a dynamic album of temples worldwide, showcasing stunning images, historical information, and detailed temple data. Built as part of the WDD 131 Dynamic Web Fundamentals course by Nephi Asha.">
+    <meta name="author" content="Nephi Asha">
+    <meta name="keywords" content="temples, temple pictures, LDS temples, dynamic web development, JavaScript, HTML, CSS, web design, WDD 131">
+    <title>Temple Album</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav>
+            <button id="menu">&#9776;</button>
+            <ul id="nav-list" class="hidden">
+                <li id="home"><a href="#home">Home</a></li>
+                <li id="old"><a href="#old">Old</a></li>
+                <li id="new"><a href="#new">New</a></li>
+                <li id="large"><a href="#large">Large</a></li>
+                <li id="small"><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="title"></h2>
+        <div class="temple-gallery">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Nephi Asha | Cross River State, Nigeria</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
