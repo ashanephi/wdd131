@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <title>Contact Us - Discover Nigeria</title>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Discover Nigeria</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu(this)">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <div>
+        <p>Email: <a href="mailto:nephiasha2017@gmail.com">support@nephiasha2017.com</a></p>
+        <p>Phone: +234 704 918 9446</p>
+        <p>Address: 1B Crospil Estate, Cross River, Nigeria</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Discover Nigeria. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu(element) {
+      const nav = document.querySelector('nav ul');
+      nav.classList.toggle('active');
+      element.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
