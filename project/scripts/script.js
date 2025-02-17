@@ -22,7 +22,37 @@ const touristSites = [
     image: "images/erin-ijesha-3.jpg",
     description: "Erin Ijesha Beach is a sheltered beach near Lagos harbour known for relaxation. It offers a serene environment for visitors to unwind and enjoy the scenic views of the coastline.",
     iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126568.73344257884!2d4.803471837984979!3d7.545187573757967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10380fe691bc505d%3A0x504dce56508e737b!2sErin%20Ijesha%20Waterfall!5e0!3m2!1sen!2sng!4v1739795420440!5m2!1sen!2sng"
-  }
+  },
+  {
+    name: "Olumo Rock",
+    image: "images/olumo-3.jpg",
+    description: "The rock ranks high as one of the choice tourist attractions in the Country. Zuma Rock, the monolithic Inselberg with a human face, is located in Madalla, Niger State, to the North of Abuja. It was once described as the unquestionable watchman of the F.C.T. It is the sandy concealment that hangs like a haze over Zuba Town. The other mountains in and around it stay a considerable distance from it, which the Zuba people see as a form of respect being paid by the other mountains to Zuma Rock for its royal presence in the locality.Visiting Zuma Rock between April and October, which marks the rainy season in central Nigeria where the rock is situated, would afford you the opportunity of seeing the much talked Zuma Rock Fire, as the apex of the Zuma Rock catches fire under heavy rainfall. Over time, this has remained one of the wonders of the Zuma Rock.",
+    iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15757.27845841774!2d7.218589226600317!3d9.12557689130405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd7d112caed1b%3A0xb415df4f7772bdb8!2sZuma%20Rock!5e0!3m2!1sen!2sng!4v1739795221919!5m2!1sen!2sng"
+  },
+  {
+    name: "Osun Sacred Grove",
+    image: "images/Osun-sacred-grove.jpg",
+    description: "Osun Sacred Grove is a premier game reserve with diverse wildlife and natural springs. It is located in Bauchi State, Nigeria, and is a popular destination for tourists seeking to experience the beauty of Nigeria's natural landscape.",
+    iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.1108347735058!2d10.50683467368199!3d9.756678577177059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10557f36b86183bf%3A0x27839b35557a1821!2sYankari%20Game%20Reserve!5e0!3m2!1sen!2sng!4v1739795335546!5m2!1sen!2sng"
+  },
+  {
+    name: "Agbokim Waterfall",
+    image: "images/agbokim-waterfalls-1.jpg",
+    description: "Agbokim Waterfall Beach is a sheltered beach near Lagos harbour known for relaxation. It offers a serene environment for visitors to unwind and enjoy the scenic views of the coastline.",
+    iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126568.73344257884!2d4.803471837984979!3d7.545187573757967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10380fe691bc505d%3A0x504dce56508e737b!2sErin%20Ijesha%20Waterfall!5e0!3m2!1sen!2sng!4v1739795420440!5m2!1sen!2sng"
+  },
+  {
+    name: "Obudu Mountain Resort",
+    image: "images/obudu-mountain-resort-2.jpg",
+    description: "Obudu Mountain Resort is a premier game reserve with diverse wildlife and natural springs. It is located in Bauchi State, Nigeria, and is a popular destination for tourists seeking to experience the beauty of Nigeria's natural landscape.",
+    iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.1108347735058!2d10.50683467368199!3d9.756678577177059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10557f36b86183bf%3A0x27839b35557a1821!2sYankari%20Game%20Reserve!5e0!3m2!1sen!2sng!4v1739795335546!5m2!1sen!2sng"
+  },
+  {
+    name: "Ogbunike Caves",
+    image: "images/ogbunike-caves-2.jpg",
+    description: "Ogbunike Caves Beach is a sheltered beach near Lagos harbour known for relaxation. It offers a serene environment for visitors to unwind and enjoy the scenic views of the coastline.",
+    iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126568.73344257884!2d4.803471837984979!3d7.545187573757967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10380fe691bc505d%3A0x504dce56508e737b!2sErin%20Ijesha%20Waterfall!5e0!3m2!1sen!2sng!4v1739795420440!5m2!1sen!2sng"
+  },
 ];
 
 
@@ -70,7 +100,6 @@ function searchTouristSites(event) {
 
 document.addEventListener('DOMContentLoaded', () => {
   displayTouristSites(touristSites);
-  displayAttractionsPreview(attractionsPreview);
   const searchInput = document.querySelector('input[type="text"]');
   searchInput.addEventListener('input', searchTouristSites);
 });

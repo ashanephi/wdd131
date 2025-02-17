@@ -6,10 +6,11 @@
     --card-background-color: #fff;
     --footer-background-color: #eee3e3ef;
     --link-hover-color: #ffab00;
+    --font-family: 'Poppins', san-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -29,7 +30,6 @@ header {
 }
 
 header h1 a{
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: var(--primary-color);
     text-decoration: none;
@@ -126,7 +126,6 @@ nav a:hover {
 
 .card h3 {
     margin: 10px;
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: var(--hover-color);
     text-align: center;
@@ -190,7 +189,6 @@ footer ul li a:hover {
 }
 
 .contact h2 {
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: var(--hover-color);
     margin-bottom: 20px;
@@ -266,7 +264,6 @@ footer ul li a:hover {
 }
 
 .details-content h2 {
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: var(--hover-color);
 }
@@ -277,7 +274,6 @@ footer ul li a:hover {
 }
 
 .tour-view h3 {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: var(--hover-color);
 }
