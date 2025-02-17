@@ -1,0 +1,131 @@
+body {
+    font-family: "Poppins", serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 1.6;
+    width: 480px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3c004e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+    border-radius: 5px;
+}
+
+
+.optional {
+    font-size: 0.9em;
+    color: #7b7b7b;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    background-color: #3c004e;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+    justify-content: space-around;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); 
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+label {
+	display: block;
+	font-weight: 700;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: #333;
+    padding: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: #5a189a;
+    color: #fff;
+
+}

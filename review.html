@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nephi Asha">
+    <meta name="keywords" content="WDD 131, web development, JavaScript, CSS, HTML">
+    <title>Review Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been successfully submitted.</p>
+        <p>Total Reviews Submitted: <span id="reviewCount">0</span></p>
+        <a href="form.html">Submit Another Review</a>
+    </main>
+
+    <footer>
+        <p>&copy;2025 🌺 Nephi Asha 🌺Nigeria</p>
+    </footer>
+
+    <script>
+        let reviewCount = localStorage.getItem('reviewCount') || 0;
+        reviewCount++;
+        localStorage.setItem('reviewCount', reviewCount);
+        document.getElementById('reviewCount').textContent = reviewCount;
+    </script>
+</body>
+</html>
