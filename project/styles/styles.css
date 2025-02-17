@@ -6,11 +6,12 @@
     --card-background-color: #fff;
     --footer-background-color: #eee3e3ef;
     --link-hover-color: #ffab00;
-    --font-family: 'Poppins', san-serif;
+    --heading-font-family: 'Roboto', sans-serif;
+    --body-font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--body-font-family);
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -29,7 +30,13 @@ header {
     z-index: 1000;
 }
 
-header h1 a{
+header h1 a,
+h2,
+h3 {
+    font-family: var(--heading-font-family);
+}
+
+header h1 a {
     font-size: 24px;
     color: var(--primary-color);
     text-decoration: none;
