@@ -300,12 +300,13 @@ footer ul li a:hover {
         flex-direction: column;
         gap: 10px;
         display: none;
+        margin-top: 25px;
     }
 
     nav ul.active {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 35px;
         position: absolute;
         top: 60px;
         left: 0;
