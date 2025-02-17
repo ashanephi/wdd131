@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/review.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,12 +26,5 @@
     <footer>
         <p>&copy;2025 🌺 Nephi Asha 🌺Nigeria</p>
     </footer>
-
-    <script>
-        let reviewCount = localStorage.getItem('reviewCount') || 0;
-        reviewCount++;
-        localStorage.setItem('reviewCount', reviewCount);
-        document.getElementById('reviewCount').textContent = reviewCount;
-    </script>
 </body>
 </html>
